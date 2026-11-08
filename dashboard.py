@@ -8,6 +8,19 @@ import os
 import glob
 import unicodedata
 
+# --- [모바일 최적화 공통 설정 (1회 선언)] ---
+MOBILE_LAYOUT = dict(
+    margin=dict(l=10, r=10, t=30, b=10),
+    legend=dict(
+        orientation="h",
+        yanchor="bottom", y=1.02,
+        xanchor="right", x=1
+    ),
+    height=450
+)
+MOBILE_CONFIG = {'displayModeBar': False}
+# ---------------------------------------------
+
 # 1. 페이지 레이아웃 설정
 st.set_page_config(layout="wide", page_title="Semper Grid Master Analytics & Executive Briefing", page_icon="🛡️")
 
